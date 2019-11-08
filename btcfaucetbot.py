@@ -32,6 +32,6 @@ for ulang in range(999999999):
     client.send_message(entity=channel_entity,message='💦 Faucet')
     sleep(3)
     message_history = client(GetHistoryRequest(peer=channel_entity,limit=1,offset_date=None,offset_id=0,max_id=0,min_id=0,add_offset=0,hash=0))
-    if message_history.messages[0].message.find('Congratulation! You've got') != -1:
+    if message_history.messages[0].message.find('Congratulation! You') != -1:
         print ('Sukses Mendapatkan Coin!')
     time.sleep(30)
